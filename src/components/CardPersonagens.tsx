@@ -13,7 +13,7 @@ export default function CardPersonagens(){
         async function carregarPersonagens(){
             const dados = await buscarPersonagens();
             setPersonagens(dados);
-            setLoading(false);
+            setLoading(false)
         }
 
         carregarPersonagens()
@@ -30,7 +30,7 @@ export default function CardPersonagens(){
 
 
     return (
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-4 p-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 p-4'>
             {personagens.map((personagem) => (
                 <div 
                     key={personagem.id}
